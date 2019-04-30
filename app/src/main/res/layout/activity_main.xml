@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Finger Print Authentication"
+      android:textSize="20dp"
+      android:layout_marginTop="30dp"
+      android:id="@+id/text1"
+      android:layout_centerHorizontal="true"
+      android:textColor="@android:color/holo_red_dark"
+      android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text1"
+        android:src="@drawable/ic_fingerprint_black_24dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please Wait"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/text2"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
